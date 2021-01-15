@@ -30,15 +30,22 @@ class PresentationAssembly: IPresentationAssembly {
         return controller
     }
     
-    func searchViewController() -> SearchViewController {
+    func searchViewController(searchQuery: String? = nil) -> SearchViewController {
         let searchViewController = SearchViewController()
         searchViewController.presenter = SearchPresenter(presentationAssembly: self,
-                                                         searchService: serviceAssembly.searchService())
+                                                         searchService: serviceAssembly.searchService(),
+                                                         searchQueriesRepository: serviceAssembly.searchQueriesRepository())
+        if searchQuery != nil {
+            searchViewController.searchQuery = searchQuery
+        }
         return searchViewController
     }
     
     func historyViewController() -> HistoryViewController {
-        return HistoryViewController()
+        let historyViewController = HistoryViewController()
+        historyViewController.presenter = HistoryPresenter(presentationAssembly: self,
+                                                           searchQueriesRepository: serviceAssembly.searchQueriesRepository())
+        return historyViewController
     }
     
     func albumDetailsViewController(album: AlbumModel) -> AlbumDetailsViewController {

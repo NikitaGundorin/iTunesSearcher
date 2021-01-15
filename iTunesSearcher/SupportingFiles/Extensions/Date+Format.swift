@@ -13,4 +13,12 @@ extension Date {
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
+    
+    var isToday: Bool {
+        Calendar.current.isDateInToday(self)
+    }
+    
+    var isYesterday: Bool {
+        Calendar.current.isDateInYesterday(self)
+    }
 }

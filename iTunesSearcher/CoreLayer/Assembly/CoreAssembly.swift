@@ -14,4 +14,8 @@ class CoreAssembly: ICoreAssembly {
     func networkManager() -> INetworkManager {
         return NetworkManager()
     }
+    
+    func coreDataManager() -> ICoreDataManager {
+        return CoreDataManager.shared
+    }
 }

@@ -9,4 +9,5 @@ import Foundation
 
 protocol IServicesAssembly {
     func searchService() -> ISearchService
+    func searchQueriesRepository() -> ISearchQueriesRepository
 }

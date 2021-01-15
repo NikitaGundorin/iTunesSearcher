@@ -9,4 +9,5 @@ import Foundation
 
 protocol ICoreAssembly {
     func networkManager() -> INetworkManager
+    func coreDataManager() -> ICoreDataManager
 }

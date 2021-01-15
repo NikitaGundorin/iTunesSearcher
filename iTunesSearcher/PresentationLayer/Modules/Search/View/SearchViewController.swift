@@ -12,6 +12,14 @@ class SearchViewController: UIViewController {
     // MARK: - Public properties
     
     var presenter: ISearchPresenter?
+    var searchQuery: String? {
+        didSet {
+            if let query = searchQuery {
+                searchController.searchBar.text = searchQuery
+                performSearch(searchText: query)
+            }
+        }
+    }
     
     // MARK: - UI
     
@@ -71,6 +79,7 @@ class SearchViewController: UIViewController {
     // MARK: - Private methods
     
     private func setupLayout() {
+        view.backgroundColor = Appearance.backgroundColor
         view.addSubview(collectionView)
         view.addSubview(activityIndicatorView)
         
@@ -98,6 +107,20 @@ class SearchViewController: UIViewController {
         AlertHelper().presentErrorAlert(vc: self,
                                         message: "Error while loading albums. Please try again later.")
     }
+    
+    private func performSearch(searchText: String) {
+        activityIndicatorView.startAnimating()
+        presenter?.performSearch(forTerm: searchText) { [weak self] result in
+            self?.activityIndicatorView.stopAnimating()
+            switch result {
+            case .failure:
+                self?.presentErrorAlert()
+            case .success(let albums):
+                self?.collectionViewDataSource.albums = albums
+            }
+            self?.collectionView.reloadData()
+        }
+    }
 }
 
 // MARK: - UICollectionViewDelegate
@@ -113,17 +136,7 @@ extension SearchViewController: UICollectionViewDelegate {
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        activityIndicatorView.startAnimating()
-        presenter?.performSearch(forTerm: searchText) { [weak self] result in
-            self?.activityIndicatorView.stopAnimating()
-            switch result {
-            case .failure:
-                self?.presentErrorAlert()
-            case .success(let albums):
-                self?.collectionViewDataSource.albums = albums
-            }
-            self?.collectionView.reloadData()
-        }
+        performSearch(searchText: searchText)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

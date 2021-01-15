@@ -16,6 +16,12 @@
 		7220768F25B42D0D00B48A0F /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220768E25B42D0D00B48A0F /* AlertHelper.swift */; };
 		7220769325B4485B00B48A0F /* AlbumDetailsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220769225B4485B00B48A0F /* AlbumDetailsFooterView.swift */; };
 		7220769925B44FF100B48A0F /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220769825B44FF100B48A0F /* Date+Format.swift */; };
+		7220769F25B4666D00B48A0F /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220769E25B4666D00B48A0F /* HistoryPresenter.swift */; };
+		722076A225B466AE00B48A0F /* SearchQueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722076A125B466AE00B48A0F /* SearchQueryModel.swift */; };
+		7229E64B25B48166006919AE /* ICoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7229E64A25B48166006919AE /* ICoreDataManager.swift */; };
+		7229E64E25B484EE006919AE /* SearchQueriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7229E64D25B484EE006919AE /* SearchQueriesRepository.swift */; };
+		7229E65125B484FD006919AE /* ISearchQueriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7229E65025B484FD006919AE /* ISearchQueriesRepository.swift */; };
+		7229E65425B48686006919AE /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7229E65325B48686006919AE /* SearchQuery.swift */; };
 		72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8A925B2F4E1009490AE /* IRequest.swift */; };
 		72B4B8B025B2F5C2009490AE /* IParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8AF25B2F5C2009490AE /* IParser.swift */; };
 		72B4B8B425B2F5D0009490AE /* BaseCodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */; };
@@ -51,6 +57,7 @@
 		72F3715D25B232100098C511 /* IPresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3715C25B232100098C511 /* IPresentationAssembly.swift */; };
 		72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3716025B232B00098C511 /* PresentationAssembly.swift */; };
 		72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3716625B237710098C511 /* TabBarRootVCModel.swift */; };
+		72FCFB8925B487DF0093AD10 /* SearchQueryDB+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FCFB8825B487DF0093AD10 /* SearchQueryDB+init.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,12 @@
 		7220768E25B42D0D00B48A0F /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		7220769225B4485B00B48A0F /* AlbumDetailsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsFooterView.swift; sourceTree = "<group>"; };
 		7220769825B44FF100B48A0F /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		7220769E25B4666D00B48A0F /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		722076A125B466AE00B48A0F /* SearchQueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryModel.swift; sourceTree = "<group>"; };
+		7229E64A25B48166006919AE /* ICoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICoreDataManager.swift; sourceTree = "<group>"; };
+		7229E64D25B484EE006919AE /* SearchQueriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueriesRepository.swift; sourceTree = "<group>"; };
+		7229E65025B484FD006919AE /* ISearchQueriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchQueriesRepository.swift; sourceTree = "<group>"; };
+		7229E65325B48686006919AE /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
 		72B4B8A925B2F4E1009490AE /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
 		72B4B8AF25B2F5C2009490AE /* IParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParser.swift; sourceTree = "<group>"; };
 		72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCodableParser.swift; sourceTree = "<group>"; };
@@ -100,6 +113,7 @@
 		72F3715C25B232100098C511 /* IPresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPresentationAssembly.swift; sourceTree = "<group>"; };
 		72F3716025B232B00098C511 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
 		72F3716625B237710098C511 /* TabBarRootVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRootVCModel.swift; sourceTree = "<group>"; };
+		72FCFB8825B487DF0093AD10 /* SearchQueryDB+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchQueryDB+init.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +180,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7220769B25B4644100B48A0F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7220769E25B4666D00B48A0F /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7220769C25B4644900B48A0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				722076A125B466AE00B48A0F /* SearchQueryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		72B4B8A525B2F2FD009490AE /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +205,7 @@
 				72B4B8C925B2F7B4009490AE /* Models */,
 				72B4B8D125B32469009490AE /* SearchService.swift */,
 				72B4B8C525B2F70A009490AE /* RequestFactory.swift */,
+				7229E64D25B484EE006919AE /* SearchQueriesRepository.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -221,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				72B4B8D425B3247D009490AE /* ISearchService.swift */,
+				7229E65025B484FD006919AE /* ISearchQueriesRepository.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -231,6 +263,7 @@
 				72B4B8CA25B31C12009490AE /* SearchResult.swift */,
 				72B4B8CE25B320E2009490AE /* Album.swift */,
 				7220768A25B4228600B48A0F /* Track.swift */,
+				7229E65325B48686006919AE /* SearchQuery.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,8 +381,10 @@
 		72F3713325B22A2A0098C511 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				72FCFB8725B487CF0093AD10 /* Extensions */,
 				72F3711C25B228FB0098C511 /* iTunesSearcher.xcdatamodeld */,
 				72F3713425B22A4A0098C511 /* CoreDataManager.swift */,
+				7229E64A25B48166006919AE /* ICoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -377,7 +412,9 @@
 		72F3715225B22F4E0098C511 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				7220769C25B4644900B48A0F /* Model */,
 				72F3715325B22F530098C511 /* View */,
+				7220769B25B4644100B48A0F /* Presenter */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -435,6 +472,14 @@
 				72F3711725B228FB0098C511 /* MainTabBarController.swift */,
 			);
 			path = Controlles;
+			sourceTree = "<group>";
+		};
+		72FCFB8725B487CF0093AD10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72FCFB8825B487DF0093AD10 /* SearchQueryDB+init.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,8 +559,10 @@
 				72F3714F25B22F340098C511 /* SearchViewController.swift in Sources */,
 				7220768F25B42D0D00B48A0F /* AlertHelper.swift in Sources */,
 				72B4B8E225B33DC3009490AE /* SearchPresenter.swift in Sources */,
+				7229E65425B48686006919AE /* SearchQuery.swift in Sources */,
 				72F3715925B231E50098C511 /* RootAssembly.swift in Sources */,
 				72B4B90A25B365E0009490AE /* Appearance.swift in Sources */,
+				722076A225B466AE00B48A0F /* SearchQueryModel.swift in Sources */,
 				7220768525B3A3B200B48A0F /* AlbumModel.swift in Sources */,
 				72B4B8D525B3247D009490AE /* ISearchService.swift in Sources */,
 				7220768B25B4228600B48A0F /* Track.swift in Sources */,
@@ -535,14 +582,19 @@
 				72B4B8D225B32469009490AE /* SearchService.swift in Sources */,
 				72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */,
 				72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */,
+				7229E64E25B484EE006919AE /* SearchQueriesRepository.swift in Sources */,
 				72B4B90725B35EEF009490AE /* CoreAssembly.swift in Sources */,
 				7220769925B44FF100B48A0F /* Date+Format.swift in Sources */,
 				7220768825B41DA200B48A0F /* AlbumDetailsHeaderView.swift in Sources */,
 				72B4B8C125B2F696009490AE /* NetworkManager.swift in Sources */,
 				72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */,
 				72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */,
+				7229E64B25B48166006919AE /* ICoreDataManager.swift in Sources */,
+				7220769F25B4666D00B48A0F /* HistoryPresenter.swift in Sources */,
 				72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */,
 				72B4B8B725B2F5E8009490AE /* DataParser.swift in Sources */,
+				72FCFB8925B487DF0093AD10 /* SearchQueryDB+init.swift in Sources */,
+				7229E65125B484FD006919AE /* ISearchQueriesRepository.swift in Sources */,
 				720B8D1125B39A2C003AB7C9 /* AlbumDetailsViewController.swift in Sources */,
 				72B4B8BE25B2F66A009490AE /* INetworkManager.swift in Sources */,
 				72B4B8B425B2F5D0009490AE /* BaseCodableParser.swift in Sources */,

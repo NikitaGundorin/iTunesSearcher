@@ -22,6 +22,7 @@ class SearchPresenter: ISearchPresenter {
     
     private let presentationAssembly: IPresentationAssembly
     private let searchService: ISearchService
+    private let searchQueriesRepository: ISearchQueriesRepository
     private var timer: Timer?
     private let searchDelay = 0.5
     private var albums: [Int64: AlbumModel] = [:]
@@ -29,9 +30,11 @@ class SearchPresenter: ISearchPresenter {
     // MARK: - Initializer
     
     init(presentationAssembly: IPresentationAssembly,
-         searchService: ISearchService) {
+         searchService: ISearchService,
+         searchQueriesRepository: ISearchQueriesRepository) {
         self.presentationAssembly = presentationAssembly
         self.searchService = searchService
+        self.searchQueriesRepository = searchQueriesRepository
     }
     
     // MARK: - ISearchPresenter
@@ -41,6 +44,7 @@ class SearchPresenter: ISearchPresenter {
         timer?.invalidate()
         guard term.count > 0 else { return completion(.success([])) }
         timer = Timer.scheduledTimer(withTimeInterval: searchDelay, repeats: false) { [weak self]  _ in
+            self?.searchQueriesRepository.saveSearchQuery(term: term)
             self?.searchService.searchAlbums(forTerm: term) { result in
                 switch result {
                 case .failure:

@@ -24,4 +24,8 @@ class ServicesAssembly: IServicesAssembly {
     func searchService() -> ISearchService {
         return SearchService(networkManager: coreAssembly.networkManager())
     }
+    
+    func searchQueriesRepository() -> ISearchQueriesRepository {
+        return SearchQueriesRepository(coreDataManager: coreAssembly.coreDataManager())
+    }
 }
