@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711325B228FB0098C511 /* AppDelegate.swift */; };
-		72F3711625B228FB0098C511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711525B228FB0098C511 /* SceneDelegate.swift */; };
-		72F3711825B228FB0098C511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711725B228FB0098C511 /* ViewController.swift */; };
-		72F3711B25B228FB0098C511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F3711925B228FB0098C511 /* Main.storyboard */; };
+		72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711725B228FB0098C511 /* MainTabBarController.swift */; };
 		72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711C25B228FB0098C511 /* iTunesSearcher.xcdatamodeld */; };
 		72F3712025B228FD0098C511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F3711F25B228FD0098C511 /* Assets.xcassets */; };
 		72F3712325B228FD0098C511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F3712125B228FD0098C511 /* LaunchScreen.storyboard */; };
+		72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3713425B22A4A0098C511 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72F3711025B228FB0098C511 /* iTunesSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F3711325B228FB0098C511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72F3711525B228FB0098C511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72F3711725B228FB0098C511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		72F3711A25B228FB0098C511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72F3711725B228FB0098C511 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		72F3711D25B228FB0098C511 /* iTunesSearcher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunesSearcher.xcdatamodel; sourceTree = "<group>"; };
 		72F3711F25B228FD0098C511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F3712225B228FD0098C511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F3712425B228FD0098C511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F3713425B22A4A0098C511 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +56,47 @@
 		72F3711225B228FB0098C511 /* iTunesSearcher */ = {
 			isa = PBXGroup;
 			children = (
-				72F3711325B228FB0098C511 /* AppDelegate.swift */,
-				72F3711525B228FB0098C511 /* SceneDelegate.swift */,
-				72F3711725B228FB0098C511 /* ViewController.swift */,
-				72F3711925B228FB0098C511 /* Main.storyboard */,
-				72F3711F25B228FD0098C511 /* Assets.xcassets */,
-				72F3712125B228FD0098C511 /* LaunchScreen.storyboard */,
-				72F3712425B228FD0098C511 /* Info.plist */,
-				72F3711C25B228FB0098C511 /* iTunesSearcher.xcdatamodeld */,
+				72F3713125B22A020098C511 /* PresentationLayer */,
+				72F3713025B229FC0098C511 /* CoreLayer */,
+				72F3712E25B2297D0098C511 /* SupportingFiles */,
 			);
 			path = iTunesSearcher;
+			sourceTree = "<group>";
+		};
+		72F3712E25B2297D0098C511 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				72F3711325B228FB0098C511 /* AppDelegate.swift */,
+				72F3711F25B228FD0098C511 /* Assets.xcassets */,
+				72F3712425B228FD0098C511 /* Info.plist */,
+				72F3712125B228FD0098C511 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		72F3713025B229FC0098C511 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				72F3713325B22A2A0098C511 /* CoreData */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		72F3713125B22A020098C511 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				72F3711725B228FB0098C511 /* MainTabBarController.swift */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		72F3713325B22A2A0098C511 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				72F3711C25B228FB0098C511 /* iTunesSearcher.xcdatamodeld */,
+				72F3713425B22A4A0098C511 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +158,6 @@
 			files = (
 				72F3712325B228FD0098C511 /* LaunchScreen.storyboard in Resources */,
 				72F3712025B228FD0098C511 /* Assets.xcassets in Resources */,
-				72F3711B25B228FB0098C511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +169,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */,
-				72F3711825B228FB0098C511 /* ViewController.swift in Sources */,
+				72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */,
+				72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */,
 				72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */,
-				72F3711625B228FB0098C511 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		72F3711925B228FB0098C511 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72F3711A25B228FB0098C511 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72F3712125B228FD0098C511 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +312,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6696YN386;
-				INFOPLIST_FILE = iTunesSearcher/Info.plist;
+				INFOPLIST_FILE = iTunesSearcher/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nikitagundorin.iTunesSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,7 +332,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6696YN386;
-				INFOPLIST_FILE = iTunesSearcher/Info.plist;
+				INFOPLIST_FILE = iTunesSearcher/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nikitagundorin.iTunesSearcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
