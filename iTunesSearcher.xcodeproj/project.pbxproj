@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8A925B2F4E1009490AE /* IRequest.swift */; };
+		72B4B8B025B2F5C2009490AE /* IParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8AF25B2F5C2009490AE /* IParser.swift */; };
+		72B4B8B425B2F5D0009490AE /* BaseCodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */; };
+		72B4B8B725B2F5E8009490AE /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8B625B2F5E8009490AE /* DataParser.swift */; };
+		72B4B8BA25B2F601009490AE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8B925B2F601009490AE /* Request.swift */; };
+		72B4B8BE25B2F66A009490AE /* INetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8BD25B2F66A009490AE /* INetworkManager.swift */; };
+		72B4B8C125B2F696009490AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8C025B2F696009490AE /* NetworkManager.swift */; };
+		72B4B8C625B2F70A009490AE /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8C525B2F70A009490AE /* RequestFactory.swift */; };
+		72B4B8CB25B31C12009490AE /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8CA25B31C12009490AE /* SearchResult.swift */; };
+		72B4B8CF25B320E2009490AE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8CE25B320E2009490AE /* Album.swift */; };
+		72B4B8D225B32469009490AE /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8D125B32469009490AE /* SearchService.swift */; };
+		72B4B8D525B3247D009490AE /* ISearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8D425B3247D009490AE /* ISearchService.swift */; };
 		72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711325B228FB0098C511 /* AppDelegate.swift */; };
 		72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711725B228FB0098C511 /* MainTabBarController.swift */; };
 		72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711C25B228FB0098C511 /* iTunesSearcher.xcdatamodeld */; };
@@ -22,6 +34,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72B4B8A925B2F4E1009490AE /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		72B4B8AF25B2F5C2009490AE /* IParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParser.swift; sourceTree = "<group>"; };
+		72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCodableParser.swift; sourceTree = "<group>"; };
+		72B4B8B625B2F5E8009490AE /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		72B4B8B925B2F601009490AE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		72B4B8BD25B2F66A009490AE /* INetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INetworkManager.swift; sourceTree = "<group>"; };
+		72B4B8C025B2F696009490AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		72B4B8C525B2F70A009490AE /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		72B4B8CA25B31C12009490AE /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		72B4B8CE25B320E2009490AE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		72B4B8D125B32469009490AE /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		72B4B8D425B3247D009490AE /* ISearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchService.swift; sourceTree = "<group>"; };
 		72F3711025B228FB0098C511 /* iTunesSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F3711325B228FB0098C511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F3711725B228FB0098C511 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -49,6 +73,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72B4B8A525B2F2FD009490AE /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8C325B2F6F3009490AE /* Contracts */,
+				72B4B8C525B2F70A009490AE /* RequestFactory.swift */,
+				72B4B8C925B2F7B4009490AE /* Models */,
+				72B4B8D125B32469009490AE /* SearchService.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		72B4B8A625B2F3B5009490AE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8BC25B2F65D009490AE /* Manager */,
+				72B4B8AE25B2F5AF009490AE /* Parsers */,
+				72B4B8A825B2F4CA009490AE /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		72B4B8A825B2F4CA009490AE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8A925B2F4E1009490AE /* IRequest.swift */,
+				72B4B8B925B2F601009490AE /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		72B4B8AE25B2F5AF009490AE /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8AF25B2F5C2009490AE /* IParser.swift */,
+				72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */,
+				72B4B8B625B2F5E8009490AE /* DataParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		72B4B8BC25B2F65D009490AE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8BD25B2F66A009490AE /* INetworkManager.swift */,
+				72B4B8C025B2F696009490AE /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		72B4B8C325B2F6F3009490AE /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8D425B3247D009490AE /* ISearchService.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		72B4B8C925B2F7B4009490AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8CA25B31C12009490AE /* SearchResult.swift */,
+				72B4B8CE25B320E2009490AE /* Album.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		72F3710725B228FB0098C511 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				72F3713125B22A020098C511 /* PresentationLayer */,
+				72B4B8A525B2F2FD009490AE /* ServiceLayer */,
 				72F3713025B229FC0098C511 /* CoreLayer */,
 				72F3712E25B2297D0098C511 /* SupportingFiles */,
 			);
@@ -91,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				72F3713325B22A2A0098C511 /* CoreData */,
+				72B4B8A625B2F3B5009490AE /* Network */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -258,16 +350,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B4B8C625B2F70A009490AE /* RequestFactory.swift in Sources */,
 				72F3714F25B22F340098C511 /* SearchViewController.swift in Sources */,
 				72F3715925B231E50098C511 /* RootAssembly.swift in Sources */,
+				72B4B8D525B3247D009490AE /* ISearchService.swift in Sources */,
 				72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */,
 				72F3715D25B232100098C511 /* IPresentationAssembly.swift in Sources */,
 				72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */,
 				72F3715525B22F5D0098C511 /* HistoryViewController.swift in Sources */,
+				72B4B8B025B2F5C2009490AE /* IParser.swift in Sources */,
+				72B4B8BA25B2F601009490AE /* Request.swift in Sources */,
+				72B4B8CB25B31C12009490AE /* SearchResult.swift in Sources */,
+				72B4B8D225B32469009490AE /* SearchService.swift in Sources */,
 				72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */,
+				72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */,
+				72B4B8C125B2F696009490AE /* NetworkManager.swift in Sources */,
 				72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */,
 				72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */,
 				72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */,
+				72B4B8B725B2F5E8009490AE /* DataParser.swift in Sources */,
+				72B4B8BE25B2F66A009490AE /* INetworkManager.swift in Sources */,
+				72B4B8B425B2F5D0009490AE /* BaseCodableParser.swift in Sources */,
+				72B4B8CF25B320E2009490AE /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
