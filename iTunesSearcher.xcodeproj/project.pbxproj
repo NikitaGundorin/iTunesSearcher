@@ -13,6 +13,12 @@
 		72F3712025B228FD0098C511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F3711F25B228FD0098C511 /* Assets.xcassets */; };
 		72F3712325B228FD0098C511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F3712125B228FD0098C511 /* LaunchScreen.storyboard */; };
 		72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3713425B22A4A0098C511 /* CoreDataManager.swift */; };
+		72F3714F25B22F340098C511 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3714E25B22F340098C511 /* SearchViewController.swift */; };
+		72F3715525B22F5D0098C511 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3715425B22F5D0098C511 /* HistoryViewController.swift */; };
+		72F3715925B231E50098C511 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3715825B231E50098C511 /* RootAssembly.swift */; };
+		72F3715D25B232100098C511 /* IPresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3715C25B232100098C511 /* IPresentationAssembly.swift */; };
+		72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3716025B232B00098C511 /* PresentationAssembly.swift */; };
+		72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3716625B237710098C511 /* TabBarRootVCModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		72F3712225B228FD0098C511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F3712425B228FD0098C511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72F3713425B22A4A0098C511 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		72F3714E25B22F340098C511 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		72F3715425B22F5D0098C511 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		72F3715825B231E50098C511 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		72F3715C25B232100098C511 /* IPresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPresentationAssembly.swift; sourceTree = "<group>"; };
+		72F3716025B232B00098C511 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
+		72F3716625B237710098C511 /* TabBarRootVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRootVCModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 				72F3711F25B228FD0098C511 /* Assets.xcassets */,
 				72F3712425B228FD0098C511 /* Info.plist */,
 				72F3712125B228FD0098C511 /* LaunchScreen.storyboard */,
+				72F3715825B231E50098C511 /* RootAssembly.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -85,7 +98,8 @@
 		72F3713125B22A020098C511 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				72F3711725B228FB0098C511 /* MainTabBarController.swift */,
+				72F3715B25B231FD0098C511 /* Assembly */,
+				72F3716325B237440098C511 /* Modules */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -97,6 +111,82 @@
 				72F3713425B22A4A0098C511 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		72F3714B25B22F1F0098C511 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				72F3714C25B22F230098C511 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		72F3714C25B22F230098C511 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72F3714E25B22F340098C511 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72F3715225B22F4E0098C511 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				72F3715325B22F530098C511 /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		72F3715325B22F530098C511 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72F3715425B22F5D0098C511 /* HistoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72F3715B25B231FD0098C511 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				72F3715C25B232100098C511 /* IPresentationAssembly.swift */,
+				72F3716025B232B00098C511 /* PresentationAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		72F3716325B237440098C511 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				72F3716425B237540098C511 /* Common */,
+				72F3714B25B22F1F0098C511 /* Search */,
+				72F3715225B22F4E0098C511 /* History */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		72F3716425B237540098C511 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				72F3716A25B237830098C511 /* Controlles */,
+				72F3716525B237680098C511 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		72F3716525B237680098C511 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72F3716625B237710098C511 /* TabBarRootVCModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72F3716A25B237830098C511 /* Controlles */ = {
+			isa = PBXGroup;
+			children = (
+				72F3711725B228FB0098C511 /* MainTabBarController.swift */,
+			);
+			path = Controlles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +258,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F3714F25B22F340098C511 /* SearchViewController.swift in Sources */,
+				72F3715925B231E50098C511 /* RootAssembly.swift in Sources */,
 				72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */,
+				72F3715D25B232100098C511 /* IPresentationAssembly.swift in Sources */,
 				72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */,
+				72F3715525B22F5D0098C511 /* HistoryViewController.swift in Sources */,
+				72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */,
 				72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */,
+				72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */,
 				72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
