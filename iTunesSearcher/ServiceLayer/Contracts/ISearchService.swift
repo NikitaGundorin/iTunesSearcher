@@ -11,4 +11,5 @@ protocol ISearchService {
     func searchAlbums(forTerm term: String,
                       completion: @escaping (Result<[Album], SearchServiceError>) -> Void)
     func getAlbumImageData(forUrl url: URL, completion: @escaping (Result<Data, SearchServiceError>) -> Void)
+    func cancelLoading()
 }

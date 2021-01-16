@@ -19,6 +19,17 @@
 		72B4B8CF25B320E2009490AE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8CE25B320E2009490AE /* Album.swift */; };
 		72B4B8D225B32469009490AE /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8D125B32469009490AE /* SearchService.swift */; };
 		72B4B8D525B3247D009490AE /* ISearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8D425B3247D009490AE /* ISearchService.swift */; };
+		72B4B8E225B33DC3009490AE /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8E125B33DC3009490AE /* SearchPresenter.swift */; };
+		72B4B8E725B34273009490AE /* AlbumCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8E625B34273009490AE /* AlbumCellModel.swift */; };
+		72B4B8EB25B348DA009490AE /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8EA25B348DA009490AE /* AlbumCell.swift */; };
+		72B4B8EF25B34936009490AE /* IConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8EE25B34936009490AE /* IConfigurableView.swift */; };
+		72B4B8F325B34BAA009490AE /* AlbumsColelctionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8F225B34BAA009490AE /* AlbumsColelctionViewDataSource.swift */; };
+		72B4B8FB25B35E88009490AE /* IServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8FA25B35E88009490AE /* IServicesAssembly.swift */; };
+		72B4B8FF25B35E98009490AE /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8FE25B35E98009490AE /* ServicesAssembly.swift */; };
+		72B4B90325B35EDF009490AE /* ICoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B90225B35EDF009490AE /* ICoreAssembly.swift */; };
+		72B4B90725B35EEF009490AE /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B90625B35EEF009490AE /* CoreAssembly.swift */; };
+		72B4B90A25B365E0009490AE /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B90925B365E0009490AE /* Appearance.swift */; };
+		72B4B90F25B3766C009490AE /* LoadImageDataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B90E25B3766C009490AE /* LoadImageDataOperation.swift */; };
 		72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711325B228FB0098C511 /* AppDelegate.swift */; };
 		72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711725B228FB0098C511 /* MainTabBarController.swift */; };
 		72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72F3711C25B228FB0098C511 /* iTunesSearcher.xcdatamodeld */; };
@@ -46,6 +57,17 @@
 		72B4B8CE25B320E2009490AE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		72B4B8D125B32469009490AE /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		72B4B8D425B3247D009490AE /* ISearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISearchService.swift; sourceTree = "<group>"; };
+		72B4B8E125B33DC3009490AE /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		72B4B8E625B34273009490AE /* AlbumCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellModel.swift; sourceTree = "<group>"; };
+		72B4B8EA25B348DA009490AE /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		72B4B8EE25B34936009490AE /* IConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IConfigurableView.swift; sourceTree = "<group>"; };
+		72B4B8F225B34BAA009490AE /* AlbumsColelctionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsColelctionViewDataSource.swift; sourceTree = "<group>"; };
+		72B4B8FA25B35E88009490AE /* IServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IServicesAssembly.swift; sourceTree = "<group>"; };
+		72B4B8FE25B35E98009490AE /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		72B4B90225B35EDF009490AE /* ICoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICoreAssembly.swift; sourceTree = "<group>"; };
+		72B4B90625B35EEF009490AE /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		72B4B90925B365E0009490AE /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		72B4B90E25B3766C009490AE /* LoadImageDataOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageDataOperation.swift; sourceTree = "<group>"; };
 		72F3711025B228FB0098C511 /* iTunesSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F3711325B228FB0098C511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F3711725B228FB0098C511 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -76,10 +98,12 @@
 		72B4B8A525B2F2FD009490AE /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				72B4B8F925B35E78009490AE /* Assembly */,
 				72B4B8C325B2F6F3009490AE /* Contracts */,
-				72B4B8C525B2F70A009490AE /* RequestFactory.swift */,
+				72B4B90D25B37630009490AE /* Operation */,
 				72B4B8C925B2F7B4009490AE /* Models */,
 				72B4B8D125B32469009490AE /* SearchService.swift */,
+				72B4B8C525B2F70A009490AE /* RequestFactory.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -139,6 +163,56 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		72B4B8E025B33D1C009490AE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8E125B33DC3009490AE /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		72B4B8E525B3403A009490AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8E625B34273009490AE /* AlbumCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72B4B8ED25B348F4009490AE /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8EE25B34936009490AE /* IConfigurableView.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		72B4B8F925B35E78009490AE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B8FA25B35E88009490AE /* IServicesAssembly.swift */,
+				72B4B8FE25B35E98009490AE /* ServicesAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		72B4B90125B35EC5009490AE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B90225B35EDF009490AE /* ICoreAssembly.swift */,
+				72B4B90625B35EEF009490AE /* CoreAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		72B4B90D25B37630009490AE /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B90E25B3766C009490AE /* LoadImageDataOperation.swift */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
 		72F3710725B228FB0098C511 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +248,7 @@
 				72F3712425B228FD0098C511 /* Info.plist */,
 				72F3712125B228FD0098C511 /* LaunchScreen.storyboard */,
 				72F3715825B231E50098C511 /* RootAssembly.swift */,
+				72B4B90925B365E0009490AE /* Appearance.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -181,6 +256,7 @@
 		72F3713025B229FC0098C511 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				72B4B90125B35EC5009490AE /* Assembly */,
 				72F3713325B22A2A0098C511 /* CoreData */,
 				72B4B8A625B2F3B5009490AE /* Network */,
 			);
@@ -208,7 +284,9 @@
 		72F3714B25B22F1F0098C511 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				72B4B8E525B3403A009490AE /* Model */,
 				72F3714C25B22F230098C511 /* View */,
+				72B4B8E025B33D1C009490AE /* Presenter */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -217,6 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				72F3714E25B22F340098C511 /* SearchViewController.swift */,
+				72B4B8EA25B348DA009490AE /* AlbumCell.swift */,
+				72B4B8F225B34BAA009490AE /* AlbumsColelctionViewDataSource.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +339,7 @@
 		72F3716425B237540098C511 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				72B4B8ED25B348F4009490AE /* Contracts */,
 				72F3716A25B237830098C511 /* Controlles */,
 				72F3716525B237680098C511 /* Models */,
 			);
@@ -351,19 +432,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B4B8C625B2F70A009490AE /* RequestFactory.swift in Sources */,
+				72B4B90325B35EDF009490AE /* ICoreAssembly.swift in Sources */,
+				72B4B8FF25B35E98009490AE /* ServicesAssembly.swift in Sources */,
+				72B4B8EF25B34936009490AE /* IConfigurableView.swift in Sources */,
 				72F3714F25B22F340098C511 /* SearchViewController.swift in Sources */,
+				72B4B8E225B33DC3009490AE /* SearchPresenter.swift in Sources */,
 				72F3715925B231E50098C511 /* RootAssembly.swift in Sources */,
+				72B4B90A25B365E0009490AE /* Appearance.swift in Sources */,
 				72B4B8D525B3247D009490AE /* ISearchService.swift in Sources */,
 				72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */,
 				72F3715D25B232100098C511 /* IPresentationAssembly.swift in Sources */,
+				72B4B90F25B3766C009490AE /* LoadImageDataOperation.swift in Sources */,
+				72B4B8F325B34BAA009490AE /* AlbumsColelctionViewDataSource.swift in Sources */,
 				72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */,
 				72F3715525B22F5D0098C511 /* HistoryViewController.swift in Sources */,
+				72B4B8E725B34273009490AE /* AlbumCellModel.swift in Sources */,
 				72B4B8B025B2F5C2009490AE /* IParser.swift in Sources */,
 				72B4B8BA25B2F601009490AE /* Request.swift in Sources */,
+				72B4B8EB25B348DA009490AE /* AlbumCell.swift in Sources */,
+				72B4B8FB25B35E88009490AE /* IServicesAssembly.swift in Sources */,
 				72B4B8CB25B31C12009490AE /* SearchResult.swift in Sources */,
 				72B4B8D225B32469009490AE /* SearchService.swift in Sources */,
 				72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */,
 				72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */,
+				72B4B90725B35EEF009490AE /* CoreAssembly.swift in Sources */,
 				72B4B8C125B2F696009490AE /* NetworkManager.swift in Sources */,
 				72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */,
 				72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */,

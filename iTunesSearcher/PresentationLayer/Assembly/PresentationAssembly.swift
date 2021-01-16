@@ -9,6 +9,18 @@ import Foundation
 
 class PresentationAssembly: IPresentationAssembly {
     
+    // MARK: - Private properties
+    
+    private let serviceAssembly: IServicesAssembly
+    
+    // MARK: - Initializer
+    
+    init(serviceAssembly: IServicesAssembly) {
+        self.serviceAssembly = serviceAssembly
+    }
+    
+    // MARK: - IPresentationAssembly
+    
     func mainTabBarController() -> MainTabBarController {
         let controller = MainTabBarController()
         controller.rootVCModels = [
@@ -19,7 +31,9 @@ class PresentationAssembly: IPresentationAssembly {
     }
     
     func searchViewController() -> SearchViewController {
-        return SearchViewController()
+        let searchViewController = SearchViewController()
+        searchViewController.presenter = SearchPresenter(searchService: serviceAssembly.searchService())
+        return searchViewController
     }
     
     func historyViewController() -> HistoryViewController {

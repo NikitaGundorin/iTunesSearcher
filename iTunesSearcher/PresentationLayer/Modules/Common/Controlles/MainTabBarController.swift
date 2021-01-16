@@ -20,11 +20,7 @@ class MainTabBarController: UITabBarController {
     private func createRootVc(rootVCModel: TabBarRootVCModel) -> UIViewController {
         let viewController = rootVCModel.viewController
         viewController.navigationItem.title = rootVCModel.title
-        if #available(iOS 13, *) {
-            viewController.view.backgroundColor = .systemBackground
-        } else {
-            viewController.view.backgroundColor = .white
-        }
+        viewController.view.backgroundColor = Appearance.backgroundColor
         let navController = UINavigationController(rootViewController: viewController)
         navController.tabBarItem.title = rootVCModel.title
         navController.tabBarItem.image = UIImage(named: rootVCModel.imageName)
