@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchResult: Codable {
+struct SearchResult<T: Codable>: Codable {
     let resultCount: Int
-    let results: [Album]
+    let results: [T]
 }

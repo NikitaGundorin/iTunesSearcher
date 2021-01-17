@@ -46,8 +46,8 @@ class SearchViewController: UIViewController {
     
     private let cellId = "albumCell"
     private lazy var collectionViewDataSource =
-        AlbumsColelctionViewDataSource(cellId: cellId) { [weak self] imageUrl, completion in
-            self?.presenter?.loadAlbumImage(forUrl: imageUrl,
+        AlbumsColelctionViewDataSource(cellId: cellId) { [weak self] albumId, completion in
+            self?.presenter?.loadAlbumImage(albumId: albumId,
                                             completion: { [weak self] result in
                                                 switch result {
                                                 case .failure:
@@ -95,18 +95,18 @@ class SearchViewController: UIViewController {
     }
     
     private func presentErrorAlert() {
-        let alertController = UIAlertController(title: "Ooops",
-                                                message: "Error while loading albums. Please, try again later.",
-                                                preferredStyle: .alert)
-        alertController.addAction(.init(title: "OK", style: .cancel))
-        present(alertController, animated: true)
+        AlertHelper().presentErrorAlert(vc: self,
+                                        message: "Error while loading albums. Please try again later.")
     }
 }
 
 // MARK: - UICollectionViewDelegate
 
 extension SearchViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.showAlbumDetails(viewController: self,
+                                    albumId: collectionViewDataSource.albums[indexPath.row].albumId)
+    }
 }
 
 // MARK: - UISearchBarDelegate
@@ -120,7 +120,7 @@ extension SearchViewController: UISearchBarDelegate {
             case .failure:
                 self?.presentErrorAlert()
             case .success(let albums):
-                self?.collectionViewDataSource.setAlbumCellModels(models: albums)
+                self?.collectionViewDataSource.albums = albums
             }
             self?.collectionView.reloadData()
         }

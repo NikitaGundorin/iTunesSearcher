@@ -9,25 +9,30 @@ import UIKit
 
 class AlbumsColelctionViewDataSource: NSObject, UICollectionViewDataSource {
     
+    // MARK: - Public properties
+    
+    var albums: [AlbumCellModel] {
+        get {
+            albumCellModels
+        }
+        set {
+            albumCellModels = newValue
+        }
+    }
+    
     // MARK: - Private properties
     
     private let cellId: String
     private var albumCellModels: [AlbumCellModel] = []
-    private let loadAlbumImageBlock: (URL, @escaping (UIImage?) -> Void) -> Void
+    private let loadAlbumImageBlock: (Int64, @escaping (UIImage?) -> Void) -> Void
     
     // MARK: - Initializer
     
     init(cellId: String,
-         loadAlbumImageBlock: @escaping (URL, @escaping (UIImage?) -> Void) -> Void) {
+         loadAlbumImageBlock: @escaping (Int64, @escaping (UIImage?) -> Void) -> Void) {
         self.cellId = cellId
         self.loadAlbumImageBlock = loadAlbumImageBlock
         super.init()
-    }
-    
-    // MARK: - Public methods
-    
-    func setAlbumCellModels(models: [AlbumCellModel]) {
-        albumCellModels = models
     }
     
     // MARK: - UICollectionViewDataSource
@@ -43,8 +48,8 @@ class AlbumsColelctionViewDataSource: NSObject, UICollectionViewDataSource {
         let model = albumCellModels[indexPath.item]
         let id = model.albumId
         cell.configure(with: model)
-        if let imageUrl = model.imageUrl {
-            loadAlbumImageBlock(imageUrl) { [weak self] image in
+        if model.imageUrl != nil {
+            loadAlbumImageBlock(id) { [weak self] image in
                 if let index = self?.albumCellModels.firstIndex(where: { $0.albumId == id }) {
                     self?.albumCellModels[index].image = image
                     collectionView.reloadData()

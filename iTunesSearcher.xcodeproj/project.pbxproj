@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720B8D1125B39A2C003AB7C9 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B8D1025B39A2C003AB7C9 /* AlbumDetailsViewController.swift */; };
+		720B8D1825B39DF6003AB7C9 /* AlbumDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B8D1725B39DF6003AB7C9 /* AlbumDetailsPresenter.swift */; };
+		7220768225B3A29B00B48A0F /* TrackCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220768125B3A29B00B48A0F /* TrackCellModel.swift */; };
+		7220768525B3A3B200B48A0F /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220768425B3A3B200B48A0F /* AlbumModel.swift */; };
+		7220768825B41DA200B48A0F /* AlbumDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220768725B41DA200B48A0F /* AlbumDetailsHeaderView.swift */; };
+		7220768B25B4228600B48A0F /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220768A25B4228600B48A0F /* Track.swift */; };
+		7220768F25B42D0D00B48A0F /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220768E25B42D0D00B48A0F /* AlertHelper.swift */; };
+		7220769325B4485B00B48A0F /* AlbumDetailsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220769225B4485B00B48A0F /* AlbumDetailsFooterView.swift */; };
+		7220769925B44FF100B48A0F /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220769825B44FF100B48A0F /* Date+Format.swift */; };
 		72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8A925B2F4E1009490AE /* IRequest.swift */; };
 		72B4B8B025B2F5C2009490AE /* IParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8AF25B2F5C2009490AE /* IParser.swift */; };
 		72B4B8B425B2F5D0009490AE /* BaseCodableParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */; };
@@ -45,6 +54,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720B8D1025B39A2C003AB7C9 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
+		720B8D1725B39DF6003AB7C9 /* AlbumDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsPresenter.swift; sourceTree = "<group>"; };
+		7220768125B3A29B00B48A0F /* TrackCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCellModel.swift; sourceTree = "<group>"; };
+		7220768425B3A3B200B48A0F /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		7220768725B41DA200B48A0F /* AlbumDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsHeaderView.swift; sourceTree = "<group>"; };
+		7220768A25B4228600B48A0F /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		7220768E25B42D0D00B48A0F /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		7220769225B4485B00B48A0F /* AlbumDetailsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsFooterView.swift; sourceTree = "<group>"; };
+		7220769825B44FF100B48A0F /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		72B4B8A925B2F4E1009490AE /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
 		72B4B8AF25B2F5C2009490AE /* IParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParser.swift; sourceTree = "<group>"; };
 		72B4B8B325B2F5D0009490AE /* BaseCodableParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCodableParser.swift; sourceTree = "<group>"; };
@@ -95,6 +113,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720B8D0F25B39A15003AB7C9 /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				720B8D1625B39DE5003AB7C9 /* Model */,
+				720B8D1525B39DE0003AB7C9 /* View */,
+				720B8D1425B39DD2003AB7C9 /* Presenter */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+		720B8D1425B39DD2003AB7C9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				720B8D1725B39DF6003AB7C9 /* AlbumDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		720B8D1525B39DE0003AB7C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				720B8D1025B39A2C003AB7C9 /* AlbumDetailsViewController.swift */,
+				7220768725B41DA200B48A0F /* AlbumDetailsHeaderView.swift */,
+				7220769225B4485B00B48A0F /* AlbumDetailsFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		720B8D1625B39DE5003AB7C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7220768125B3A29B00B48A0F /* TrackCellModel.swift */,
+				7220768425B3A3B200B48A0F /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7220768D25B42D0200B48A0F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7220768E25B42D0D00B48A0F /* AlertHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7220769725B44FE700B48A0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7220769825B44FF100B48A0F /* Date+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		72B4B8A525B2F2FD009490AE /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +230,7 @@
 			children = (
 				72B4B8CA25B31C12009490AE /* SearchResult.swift */,
 				72B4B8CE25B320E2009490AE /* Album.swift */,
+				7220768A25B4228600B48A0F /* Track.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,6 +315,7 @@
 		72F3712E25B2297D0098C511 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				7220769725B44FE700B48A0F /* Extensions */,
 				72F3711325B228FB0098C511 /* AppDelegate.swift */,
 				72F3711F25B228FD0098C511 /* Assets.xcassets */,
 				72F3712425B228FD0098C511 /* Info.plist */,
@@ -331,6 +404,7 @@
 			children = (
 				72F3716425B237540098C511 /* Common */,
 				72F3714B25B22F1F0098C511 /* Search */,
+				720B8D0F25B39A15003AB7C9 /* AlbumDetails */,
 				72F3715225B22F4E0098C511 /* History */,
 			);
 			path = Modules;
@@ -339,6 +413,7 @@
 		72F3716425B237540098C511 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7220768D25B42D0200B48A0F /* Helpers */,
 				72B4B8ED25B348F4009490AE /* Contracts */,
 				72F3716A25B237830098C511 /* Controlles */,
 				72F3716525B237680098C511 /* Models */,
@@ -435,14 +510,19 @@
 				72B4B90325B35EDF009490AE /* ICoreAssembly.swift in Sources */,
 				72B4B8FF25B35E98009490AE /* ServicesAssembly.swift in Sources */,
 				72B4B8EF25B34936009490AE /* IConfigurableView.swift in Sources */,
+				720B8D1825B39DF6003AB7C9 /* AlbumDetailsPresenter.swift in Sources */,
 				72F3714F25B22F340098C511 /* SearchViewController.swift in Sources */,
+				7220768F25B42D0D00B48A0F /* AlertHelper.swift in Sources */,
 				72B4B8E225B33DC3009490AE /* SearchPresenter.swift in Sources */,
 				72F3715925B231E50098C511 /* RootAssembly.swift in Sources */,
 				72B4B90A25B365E0009490AE /* Appearance.swift in Sources */,
+				7220768525B3A3B200B48A0F /* AlbumModel.swift in Sources */,
 				72B4B8D525B3247D009490AE /* ISearchService.swift in Sources */,
+				7220768B25B4228600B48A0F /* Track.swift in Sources */,
 				72F3711E25B228FB0098C511 /* iTunesSearcher.xcdatamodeld in Sources */,
 				72F3715D25B232100098C511 /* IPresentationAssembly.swift in Sources */,
 				72B4B90F25B3766C009490AE /* LoadImageDataOperation.swift in Sources */,
+				7220769325B4485B00B48A0F /* AlbumDetailsFooterView.swift in Sources */,
 				72B4B8F325B34BAA009490AE /* AlbumsColelctionViewDataSource.swift in Sources */,
 				72F3711825B228FB0098C511 /* MainTabBarController.swift in Sources */,
 				72F3715525B22F5D0098C511 /* HistoryViewController.swift in Sources */,
@@ -456,14 +536,18 @@
 				72F3716125B232B00098C511 /* PresentationAssembly.swift in Sources */,
 				72B4B8AA25B2F4E1009490AE /* IRequest.swift in Sources */,
 				72B4B90725B35EEF009490AE /* CoreAssembly.swift in Sources */,
+				7220769925B44FF100B48A0F /* Date+Format.swift in Sources */,
+				7220768825B41DA200B48A0F /* AlbumDetailsHeaderView.swift in Sources */,
 				72B4B8C125B2F696009490AE /* NetworkManager.swift in Sources */,
 				72F3713525B22A4A0098C511 /* CoreDataManager.swift in Sources */,
 				72F3716725B237710098C511 /* TabBarRootVCModel.swift in Sources */,
 				72F3711425B228FB0098C511 /* AppDelegate.swift in Sources */,
 				72B4B8B725B2F5E8009490AE /* DataParser.swift in Sources */,
+				720B8D1125B39A2C003AB7C9 /* AlbumDetailsViewController.swift in Sources */,
 				72B4B8BE25B2F66A009490AE /* INetworkManager.swift in Sources */,
 				72B4B8B425B2F5D0009490AE /* BaseCodableParser.swift in Sources */,
 				72B4B8CF25B320E2009490AE /* Album.swift in Sources */,
+				7220768225B3A29B00B48A0F /* TrackCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

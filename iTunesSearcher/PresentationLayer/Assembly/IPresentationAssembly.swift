@@ -11,4 +11,5 @@ protocol IPresentationAssembly {
     func mainTabBarController() -> MainTabBarController
     func searchViewController() -> SearchViewController
     func historyViewController() -> HistoryViewController
+    func albumDetailsViewController(album: AlbumModel) -> AlbumDetailsViewController
 }

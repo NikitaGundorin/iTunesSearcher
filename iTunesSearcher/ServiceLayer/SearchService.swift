@@ -52,6 +52,49 @@ class SearchService: ISearchService {
     func cancelLoading() {
         operationQueue.cancelAllOperations()
     }
+    
+    func loadAlbumDetails(albumId: Int64,
+                          imageUrl: URL,
+                          completion: @escaping (Result<([Track], Data?, Bool), SearchServiceError>) -> Void) {
+        let dispatchGroup = DispatchGroup()
+        
+        let getAlbumImageRequest = RequestFactory.getImageDataRequest(forUrl: imageUrl)
+        let getAlbumTrackListRequest = RequestFactory.getAlbumTrackListRequest(albumId: albumId)
+        var hasErrors = false
+        var imageData: Data?
+        var tracks: [Track] = []
+        dispatchGroup.enter()
+        networkManager.makeRequest(getAlbumImageRequest,
+                                   session: URLSession.shared) { result in
+            switch result {
+            case .failure:
+                hasErrors = true
+            case .success(let data):
+                imageData = data
+            }
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        networkManager.makeRequest(getAlbumTrackListRequest,
+                                   session: URLSession.shared) { result in
+            switch result {
+            case .failure:
+                hasErrors = true
+            case .success(let result):
+                tracks = result.results.filter { $0.wrapperType == "track" }
+            }
+            dispatchGroup.leave()
+        }
+        
+        let result = dispatchGroup.wait(timeout: .now() + 5)
+        switch result {
+        case .success:
+            completion(.success((tracks, imageData, hasErrors)))
+        case .timedOut:
+            completion(.failure(.error))
+        }
+    }
 }
 
 enum SearchServiceError: Error {

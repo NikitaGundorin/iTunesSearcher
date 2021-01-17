@@ -15,4 +15,16 @@ class Appearance {
             return .white
         }
     }
+    
+    static var regular12: UIFont {
+        .systemFont(ofSize: 12)
+    }
+    
+    static var regular14: UIFont {
+        .systemFont(ofSize: 14)
+    }
+    
+    static var semibold16: UIFont {
+        .systemFont(ofSize: 16, weight: .semibold)
+    }
 }
